@@ -74,7 +74,15 @@
 							
 						}
 						
-						echo("<li class=gallery-item ><img id=\"gallery{$i}\" src=\"$imges[$i]\" alt='' width=\"$imgWidth\" height=\"$imgHeight\"></li>");
+						echo("<li class=gallery-item >
+								<div class=inner>
+									<a class=imgClickArea id=\"imgClickArea{$i}\">
+										<p class=imgArea id=\"imgArea{$i}\">
+											<img class=img id=\"img{$i}\" src=\"$imges[$i]\" alt='' width=\"$imgWidth\" height=\"$imgHeight\">
+										</p>
+									</a>
+								</div>
+							</li>");
 					}
 				?>
 				
